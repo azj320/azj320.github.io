@@ -9,6 +9,14 @@
     float:left;
     text-align: end;
 }
+.logo-img{
+    width: 60%;
+}
+@media (max-width: 768px) {
+    .logo-img {
+        width: 70px;
+    }
+}
 .small-font{
     font-size: 12px;
 }
@@ -168,3 +176,4 @@ h1, h2, h3, h4, h5, h6 {
 .blog-footer p:last-child {
     margin-bottom: 0;
 }
+
