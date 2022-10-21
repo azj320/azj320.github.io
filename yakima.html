@@ -17,29 +17,13 @@
     <!--      for github linkedin etc icons -->
     <script src="https://kit.fontawesome.com/188a1ecbd0.js" crossorigin="anonymous" async></script>
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="yakima.css" rel="stylesheet">
 </head>
-<body>
+<body class="diagonal-gradient">
 <div>
     <header class="blog-header py-2 px-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
@@ -50,7 +34,7 @@
                 </a>
             </div>
             <div class="col-7 text-center">
-                <a class="blog-header-logo dark-prime" href="index.html">Yakima Theater</a>
+                <a class="blog-header-logo color-white" >Yakima Theater</a>
             </div>
             <div class="col-3 d-flex justify-content-end align-items-center">
                 <!--              Search input only visible on md to large -->
@@ -58,11 +42,11 @@
                     <input type="search" id="form1" class="form-control" placeholder="Search Movie" aria-label="Search" />
                 </div>
 <!--               Search icon only visible on xs and s -->
-                <a class="link-secondary d-block d-md-none black" href="#" aria-label="Search">
+                <a class="link-secondary d-block d-md-none color-white" href="#" aria-label="Search">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
                 </a>
 <!--                User display on all screen size-->
-                <a class="mx-2 black">
+                <a class="mx-2 color-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
@@ -73,7 +57,7 @@
         </div>
     </header>
 
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-prime-dark" style="box-shadow: 0 8px 6px -6px black;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Showtimes</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,9 +97,9 @@
         <div class="col-sm-9">
             <div class="d-flex justify-content-center py-3" >
                 <div class="dropdown me-3">
-                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    style="font-size: 24px">
+                    style="font-size: 23px; color: #0F0C61" >
                         Yakima Theater
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -124,28 +108,28 @@
                     </div>
                 </div>
                 <div class="">
-                    <i class="fa fa-phone fa-flip-horizontal" aria-hidden="true"></i>
-                    <span class="small-font d-none d-md-inline" >(509)248-0243</span>
+                    <i class="fa fa-phone fa-flip-horizontal color-white" aria-hidden="true"></i>
+                    <span class="small-font d-none d-md-inline color-white" >(509)248-0243</span>
                     <br>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span class="small-font d-none d-md-inline">1305 North 16th Avenue</span>
+                    <i class="fa fa-map-marker color-white" aria-hidden="true"></i>
+                    <span class="small-font d-none d-md-inline color-white">1305 North 16th Avenue</span>
                 </div >
             </div>
 <!--            date bar -->
-            <div class="nav-scroller mb-2 mt-1">
-                <nav class="nav d-flex justify-content-between bg-light">
-                    <a class="p-2 text-decoration-none" >Today Oct 21</a>
-                    <a class="p-2 link-secondary" >Oct 22</a>
-                    <a class="p-2 link-secondary" >Oct 23</a>
-                    <a class="p-2 link-secondary" >Oct 24</a>
-                    <a class="p-2 link-secondary" >Oct 25</a>
-                    <a class="p-2 link-secondary" >Oct 26</a>
-                    <a class="p-2 link-secondary" >Oct 27</a>
+            <div class="nav-scroller mb-2 mt-1" style="border-bottom: 1px solid white">
+                <nav class="nav d-flex justify-content-between">
+                    <a class="p-2 text-decoration-none color-white" >Today Oct 21</a>
+                    <a class="p-2 link-secondary color-white" >Oct 22</a>
+                    <a class="p-2 link-secondary color-white" >Oct 23</a>
+                    <a class="p-2 link-secondary color-white" >Oct 24</a>
+                    <a class="p-2 link-secondary color-white" >Oct 25</a>
+                    <a class="p-2 link-secondary color-white" >Oct 26</a>
+                    <a class="p-2 link-secondary color-white" >Oct 27</a>
                 </nav>
             </div>
 <!--            current time -->
-            <div class="text-center pb-2">
-                Current time: 11:30am
+            <div class="text-center pb-2 d-none d-md-block color-white">
+                Current Time: 11:30am
             </div>
 <!--            card list -->
             <div >
@@ -166,10 +150,10 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">5:05pm - 7:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">5:05pm - 7:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -193,10 +177,10 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">5:05pm - 7:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">5:05pm - 7:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -219,10 +203,10 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">5:05pm - 7:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">5:05pm - 7:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -246,10 +230,10 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">5:05pm - 7:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">5:05pm - 7:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -272,10 +256,10 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">5:05pm - 7:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">5:05pm - 7:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -299,9 +283,9 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -324,10 +308,10 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">5:05pm - 7:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">5:05pm - 7:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -350,10 +334,10 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">5:05pm - 7:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">5:05pm - 7:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -376,10 +360,10 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">5:05pm - 7:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">8:05pm - 10:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">5:05pm - 7:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
 
                         </div>
@@ -398,8 +382,8 @@
                             </p>
                             <hr>
                             <div >
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">12:05pm - 2:00pm</button>
-                                <button type="button" class="btn btn-sm btn-outline-dark card-btn my-2 mx-2">3:05pm - 5:00pm</button>
+                                <button type="button" class="btn btn-sm card-btn my-2 mx-2">12:05pm - 2:00pm</button>
+                                <button type="button" class="btn btn-sm  card-btn my-2 mx-2">3:05pm - 5:00pm</button>
                             </div>
 
                         </div>
@@ -409,14 +393,14 @@
             </div>
 
 
-            <nav class="blog-pagination" aria-label="Pagination">
-                <a class="btn btn-outline-primary" href="#">Back to Top</a>
+            <nav class="blog-pagination " aria-label="Pagination">
+                <a class="btn btn-outline-light color-white " href="#">Back to Top</a>
             </nav>
 
         </div>
 
         <div class="col-sm-3">
-            <div class="position-sticky" style="top: 3rem;">
+            <div class="position-sticky side-bar" style="top: 3rem;">
                 <hr class="d-block d-sm-none">
                 <div class="pt-3 pb-2">
                     <h4 class="fst-italic py-2 text-sidebar">Now Showing</h4>
@@ -464,7 +448,7 @@
 </main>
 
     <footer class="blog-footer">
-        <div class="container bg-light">
+        <div class="container color-white">
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center pb-3 pb-md-0">

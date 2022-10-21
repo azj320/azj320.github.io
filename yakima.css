@@ -38,22 +38,29 @@
 }
 .text-sidebar{
     font-size:21px;
+    color: white;
 }
 .card-title{
     font-size: 30px;
     font-weight: bold;
+    color: #FFFDFD;
 }
 .card-rate{
     word-spacing: 10px;
     font-weight: bold;
-    color: gray;
+    color: #E1D8D8;
     font-size: 15px
 }
 .card-des{
     font-size: 12px;
+    color: #FFFDFD;
+}
+.card-body h6{
+    color: #FFFDFD;
 }
 .card-btn{
-    color:#35327B;
+    color:#FFFDFD;
+    background-color: #0C0946;
 }
 .blog-header {
     line-height: 1;
@@ -61,16 +68,19 @@
 }
 .foot-text{
     font-size: 12px;
+    color: white;
 }
 .foot-text-link{
     font-size:15px;
     text-decoration: underline;
+    color:white;
 }
 
 .blog-header-logo {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
     font-size: 40px;
     text-decoration: none;
+    font-weight: bolder;
 }
 @media (max-width: 768px) {
     .blog-header-logo {
@@ -80,6 +90,7 @@
 }
 .dark-prime{
     color: #35327B;
+
 }
 .black{
     color: black;
@@ -175,10 +186,32 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2.5rem 0;
     color: #727272;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: rgba(217,217,217,0.46);
     border-top: .05rem solid #e5e5e5;
 }
 .blog-footer p:last-child {
     margin-bottom: 0;
 }
-
+.diagonal-gradient {
+    background: linear-gradient(to bottom right, #0C0946 60%, #A3895B) fixed;
+}
+.color-white{
+    color:white;
+    text-underline-color: white;
+    fill: white;
+}
+.bg-prime{
+    background-color: #35327B;
+}
+.bg-prime-dark{
+    background-color: #0C0946;
+}
+.card{
+    background-color: rgba(255, 253, 253, 0.22);
+}
+.side-bar{
+    color: white;
+}
+.dropdown{
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
