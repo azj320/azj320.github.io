@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Bootstrap and me">
+    <meta name="generator" content="Hugo 0.84.ya0">
+    <title>Responsive Redesign</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <!--        <a class="link-secondary" href="#">Subscribe</a>-->
+            </div>
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="index.html">Portfolio</a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="link-secondary" href="https://www.google.com/" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                </a>
+                <!--        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>-->
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 link-secondary" href="persona_stb.html">Persona & Storyboard</a>
+            <a class="p-2 link-secondary" href="redesign.html">Responsive Redesign</a>
+            <a class="p-2 link-secondary" href="#">A/B Testing & Eye Tracking</a>
+            <a class="p-2 link-secondary" href="#">Iterative Design and Evaluation</a>
+            <a class="p-2 link-secondary" href="#">Development</a>
+            <a class="p-2 link-secondary" href="#">Industry Portfolio Reviews</a>
+        </nav>
+    </div>
+</div>
+
+<!--Main Body-->
+<main class="container">
+    <div class="row g-5">
+        <div class="col-md-8">
+            <article class="blog-post">
+                <h2 class="blog-post-title">Responsive Redesign</h2>
+                <p class="blog-post-meta">Oct 18, 2022</p>
+                <h3 id="pickweb">Pick a Web Page</h3>
+                <hr>
+                <p>The website I choose to re-design is Yakima Theater's official website. Yakima Theater is a family
+                    owned theater in Washington. The theater has been there since 1912 and made it through the pandemic.
+                    It's my favourite movie theater whenever I visited the area. They have great staffs
+                    and nice environment but their website is ugly and poorly designed. I believe their business
+                    will be much better if they improve their website.
+                <a href="i">Link to the web</a></p>
+                <div class="d-flex justify-content-between mb-3">
+                    <img src="assets/hw2/web.png" width="45%">
+                    <img src="assets/hw2/web1.png" width="45%">
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <img src="assets/hw2/web2.png" width="45%">
+                    <img src="assets/hw2/web3.png" width="45%">
+                </div>
+                <h3 id="problem">Finding Problems</h3>
+                <hr>
+                <h6>Visual</h6>
+                <ul>
+                    <li>Their logo on the top takes too much space. Users have to scroll down to view their content.</li>
+                    <li>There is no padding around the pick a location button.</li>
+                    <li>There is no line or color to define each section.</li>
+                    <li>The facebook logo and sign in button are placed in unconventional positions. Users might need time
+                     to find them.</li>
+                    <li>The yellow color doesn't have strong contrast with the blue color or the white color.
+                        It's hard to see the words.</li>
+                    <li>The info on the right hand side takes too much space.</li>
+                </ul>
+                <h6>Usability, Learnability and etc</h6>
+                <ul>
+                    <li>There are three different locations for the Yakima Theater but each has a different name. It's confusing
+                     for a first time user what they are. </li>
+                    <li>Users can only choose two of the three locations under the button "Please Choose Location". The other
+                    location has its own website, and it's on the right hand side of the page.</li>
+                    <li>It's not clear what time the movie ends.</li>
+                    <li>The choose Location button is too close to the Showtimes button which makes it hard to click. </li>
+                    <li>The state of the Location button is not up-to-date when choosing the location through the Showtimes button.</li>
+                    <li>It's not clear what the Search algorithm is based on. </li>
+                    <li>The purpose of the section Theater Info is not clear. Users are expecting to find locations and picture of the
+                     theater, but they only have the rules on the page.</li>
+                </ul>
+                <h3 id="accessibility">Accessibility</h3>
+                <hr>
+                <div class="d-inline-flex justify-content-around mb-4">
+                    <img src="assets/hw2/ass.png" width="30%">
+                    <ul>
+                        <p>I agree to most of its findings. I found some same errors in the previous section. WAVE also
+                            helps me find some errors or warnings I didn't notice earlier.</p>
+                        <li>Missing first level heading on their home page</li>
+                        <li>Redundant link in email sign-up section</li>
+                        <br>
+                        <p>There is one error that don't really show on the page but in their code</p>
+                        <li>The empty link is an error in their code but not shown on the page. There is no button or
+                        text that allows user to click on the empty link on their website.</li>
+                    </ul>
+                </div>
+                <h3 id="lofi">Lo-fi Wireframe</h3>
+                <hr>
+                <p>Current Web Design:</p>
+                <div class="d-flex flex-column mb-3" width="50%">
+                    <img src="assets/hw2/o1.png" width="80%">
+                    <img src="assets/hw2/o2.png" width="80%">
+                    <img src="assets/hw2/o3.png" width="80%">
+                </div>
+                <p>Lo-fi for Desktop Layout:</p>
+                <img src="assets/hw2/desktopview.png" width="100%">
+                <p>Lo-fi for Mobile Layout:</p>
+                <img src="assets/hw2/mobile.png" width="100%">
+                <p>Lo-fi for Tablet Layout:</p>
+                <img src="assets/hw2/tablet.png" width="100%">
+
+
+            </article>
+
+
+            <nav class="blog-pagination" aria-label="Pagination">
+                <a class="btn btn-outline-primary" href="#">Back to start</a>
+                <!--                <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>-->
+            </nav>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">Overviews</h4>
+                    <p class="mb-0">"The goal of this assignment is for you to practice the workflow of redesigning a simple website.
+                        You should take away the skills necessary to analyze and identify flaws in an existing interface,
+                        create low-fidelity and high-fidelity prototypes for various screen sizes,
+                        and build a responsive website based on those prototypes."</p>
+                </div>
+                <div class="p-4 mb-3 ">
+                    <h4 class="fst-italic">Content Outline</h4>
+                    <ol>
+                        <li><a href="#pickweb">Pick a Web Page</a></li>
+                        <li><a href="#problem">Finding Problems</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                        <li><a href="#lofi">Lo-fi Wireframe</a></li>
+                        <li><a href="">Visual Design Style Guide</a></li>
+                        <li><a href="">Hi-fi Prototype</a></li>
+                        <li><a href="">Responsive Redesign</a></li>
+                    </ol>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Links to all the HW submission</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a href="persona_stb.html">HW1</a></li>
+                        <li><a href="redesign.html">HW2</a></li>
+                        <li><a href="#">HW3 coming soon</a></li>
+                        <!--            <li><a href="#">December 2020</a></li>-->
+                        <!--            <li><a href="#">November 2020</a></li>-->
+                        <!--            <li><a href="#">October 2020</a></li>-->
+                        <!--            <li><a href="#">September 2020</a></li>-->
+                        <!--            <li><a href="#">August 2020</a></li>-->
+                        <!--            <li><a href="#">July 2020</a></li>-->
+                        <!--            <li><a href="#">June 2020</a></li>-->
+                        <!--            <li><a href="#">May 2020</a></li>-->
+                        <!--            <li><a href="#">April 2020</a></li>-->
+                    </ol>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Elsewhere</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="https://github.com/azj320/azj320.github.io">GitHub Source Code</a></li>
+                        <!--            <li><a href="#">Twitter</a></li>-->
+                        <!--            <li><a href="#">Facebook</a></li>-->
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="blog-footer">
+    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
+
+
+
+</body>
+</html>
