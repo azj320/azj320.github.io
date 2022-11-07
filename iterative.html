@@ -101,8 +101,9 @@
 
                 <h3 class="pt-5" id="lofi">Low-Fidelity Wireframe With Annotations</h3>
                 <hr>
-                <p>The design decisions are in the annotation.</p>
+                <p>The design decisions are in the annotation. <a target="_blank" href="https://www.figma.com/file/pvSaC5YstmYMQkLkj8fzi1/toko?node-id=54%3A4">Link to view it in Figma</a></p>
                 <img class="pb-4" src="assets/iterative/lofi.png" width="80%">
+
 
                 <h3 class="pt-5" id="hifi">Mockup Critics & Final High-Fidelity Wireframe</h3>
                 <hr>
@@ -127,7 +128,7 @@
                 </ul>
                 <h5 class="py-3">Final High-Fidelity Prototype</h5>
                 <img src="assets/iterative/hifi.png" width="100%">
-                <a href="https://www.figma.com/proto/pvSaC5YstmYMQkLkj8fzi1/toko?node-id=212%3A770&scaling=scale-down&page-id=212%3A475&starting-point-node-id=212%3A770&show-proto-sidebar=1">Link to play with the prototype in Figma</a>
+                <a class="pb-3" href="https://www.figma.com/proto/pvSaC5YstmYMQkLkj8fzi1/toko?node-id=212%3A770&scaling=scale-down&page-id=212%3A475&starting-point-node-id=212%3A770&show-proto-sidebar=1">Link to play with the prototype in Figma</a>
 
                 <h3 class="pt-5" id="usertest">User Testing</h3>
                 <hr>
@@ -166,9 +167,81 @@
                         recommend this app to a friend?</li>
                 </ol>
                 <h5>User Testing Videos</h5>
-                <a class="link-primary" href="">Links to All Three User Testing Videos</a>
-                <p>maybe a img here</p>
-                <h5>Results Analysis</h5>
+                <p>Click on the picture to watch our user testing videos</p>
+                <div class="row row-cols-3 pb-3">
+                    <div class="col">
+                        <a href="https://app.usertesting.com/v/cf6ee37b-a8a1-4c55-89e5-0d8d76b22e2b?encrypted_video_handle=ad2aea3e-85a4-4906-b919-20d68bc86daf#!/notes" target="_blank"><img src="assets/iterative/usertest.png" width="100%"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://app.usertesting.com/v/b88daf0d-627b-4727-b619-a8041b8b2ccb?encrypted_video_handle=86259cff-c0a4-49c5-ab44-90db76969b03#!/notes" target="_blank"><img src="assets/iterative/usertest1.png" width="100%"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://app.usertesting.com/v/d4c41938-8f3b-41ea-9d0a-70148dc02d8e?encrypted_video_handle=ccc7efb2-86c9-402b-86fc-bc28fbc32194#!/notes" target="_blank"><img src="assets/iterative/usertest2.png" width="100%"></a>
+                    </div>
+                </div>
+                <h3 class="pt-5" id="result">Result Analysis</h3>
+                <hr>
+                <h5 class="pb-2">Result Summary For Each Task</h5>
+                <h6>Task 1: Chat with the bot under the "Social Gathering" setting</h6>
+                <ul>
+                    <li>All three users were able to successfully find the “Social Gathering”
+                        topic and enter into the chat.
+                    <li>One user suggested making the topic titles easier to be spotted either
+                    by making it a darker color or bolding it since the text was not super
+                        obvious. The other two users said that it was easy to find.</li>
+                </ul>
+
+                <h6>Task 2: Continue the chat under the "Snack Time" setting</h6>
+                <ul>
+                    <li>All three users struggled with figuring out how to continue the conversation.</li>
+                    <li>The drag up functionality was not intuitive, and they all attempted to click the
+                        section and saw no response and did not try dragging. Only one user was able to
+                        figure it out and found the grammar correction pop up immediately.</li>
+                    <li>Possibly the drap up interaction on a phone would be more intuitive than simulating
+                        phone interactions on a computer. Regardless, this would be more intuitive with a button.</li>
+                </ul>
+
+                <h6>Task 3: Go back to transcript and view history under the "Snack Time" setting</h6>
+                <ul>
+                    <li>Since some users were unable to navigate to the continued conversation page, they
+                        did not understand where the transcript was. </li>
+                    <li>One user that did find the page, thought that the arrow signs were confusing
+                    in that they were not exactly pointing to the transcript, leading her to misidentify
+                    which page was the transcript.</li>
+                </ul>
+
+                <h6>Task 4: Go back to home screen and navigate all possible topics</h6>
+                <ul>
+                    <li>All three users were able to navigate back to the home screen by finding
+                        it on the bottom navigation menu bar. Some users noted that the “Browse All”
+                        button was obvious and easy to find. All users found this task to be very easy.</li>
+                    <li>A user noted that they liked the blue color scheme for all the topics and
+                        seemed very calming. </li>
+                </ul>
+
+                <h6>Task 5: Sign Out</h6>
+                <ul>
+                    <li>All the users were able to find the sign out button and found the task extremely easy. </li>
+                    <li>The sign out button being under the profile page was expected and intuitive to all the users.</li>
+                </ul>
+
+                <h5 class="pt-3">Potential Interface Changes</h5>
+                <p>Based on the user testing result, we found some interface problems with our current prototype.</p>
+                <ul>
+                    <li>One of the main comments that we received from user testing was that for Task 2, it was not
+                        very intuitive on how to continue a previously done conversation. We would potentially change
+                        our interface from swipe up to continue to a solid button so that the directionality of the
+                        arrow symbol does not confuse the user on which screen is supposed to be the "Transcript screen"
+                        and which screen is supposed to be the "Continue conversation screen". </li>
+                    <li>The other main issue was that users found it confusing that during a continued conversation,
+                        they could see the transcript while learning and as a static page. Users were not sure why
+                        there were two screens for the transcript. We would potentially change our interface to only
+                        show the static transcript page when viewing a previous conversation, and then if a user
+                        wanted to continue the conversation we would not have the option to open up the static transcript
+                        from the messaging page.</li>
+                </ul>
+
+
 
 
 
@@ -195,6 +268,7 @@
                         <li><a href="#lofi">Lo-fi Wireframe</a></li>
                         <li><a href="#hifi">Critics & Hi-fi</a></li>
                         <li><a href="#usertest">User Testing</a></li>
+                        <li><a href="#result">Result Analysis</a></li>
                     </ol>
                 </div>
 
