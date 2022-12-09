@@ -25,34 +25,39 @@
 </head>
 <body class="diagonal-gradient">
 <div>
+    <!-- Header Start-->
+    <!-- Padding 2 along y axis and 3 along x axis -->
     <header class="blog-header py-2 px-3">
+        <!-- Wrap the header in grid system; arrange space between each item; center items in the header -->
         <div class="row flex-nowrap justify-content-between align-items-center">
+            <!-- Logo takes 2 column-space -->
             <div class="col-2">
-<!--                visible on all sizes -->
+                <!--Logo changes size as screen size changes; visible on all sizes -->
                 <a class="link-secondary" href="yakima.html">
                     <img src="assets/hw2/yamakilogo.png" class="logo-img"width="60%">
                 </a>
             </div>
+            <!-- Title takes 7 column-space; center text -->
             <div class="col-7 text-center">
                 <a class="blog-header-logo color-white" href="redesign.html" >Yakima Theater</a>
             </div>
+            <!-- Search input and user takes 3 column-space; align items right and center -->
             <div class="col-3 d-flex justify-content-end align-items-center">
-                <!--              Search input only visible on md to large -->
+                <!-- Search input only visible on md to large screen size -->
                 <div class="form-outline d-none d-md-block d-inline" >
                     <input type="search" id="form1" class="form-control" placeholder="Search Movie" aria-label="Search" />
                 </div>
-<!--               Search icon only visible on xs and s -->
+                <!--  Search icon only visible on xs and s screen size -->
                 <a class="link-secondary d-block d-md-none color-white" href="#" aria-label="Search">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
                 </a>
-<!--                User display on all screen size-->
+                <!--  User display on all screen size; add 2 margin to its left and right hand sides -->
                 <a class="mx-2 color-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                     </svg>
                 </a>
-                <!--        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>-->
             </div>
         </div>
     </header>
@@ -133,14 +138,19 @@
             </div>
 <!--            card list -->
             <div >
-<!--                card 0-->
+                <!-- card 0-->
                 <div class="card mt-1 mb-3" id="movie0">
+                    <!--Flex: place image and card body in the same line-->
                     <div class="d-flex">
+                    <!--Movie image-->
                         <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Black_Adam_%28film%29_poster.jpg" class="card-img" alt="...">
+                        <!--Card Body-->
                         <div class="card-body">
+                            <!--Title-->
                             <h5 class="card-title">Black Adam</h5>
                             <p class="card-rate">PG-13 2h4m Action/Fantasy</p>
                             <h6 class="pb-0">Description:</h6>
+                            <!--Dummy text-->
                             <p class="card-des">n ancient Kahndaq, Teth Adam was bestowed the almighty powers of the gods.
                                 After using these powers for vengeance, he was imprisoned, becoming Black Adam.
                                 Nearly 5,000 years have passed, and Black Adam has gone from man to myth to legend.
@@ -149,13 +159,13 @@
                                 </span>
                             </p>
                             <hr>
-                            <div >
+                            <!--Button list-->
+                            <div>
                                 <button type="button" class="btn btn-sm card-btn my-2 mx-2">12:05pm - 2:00pm</button>
                                 <button type="button" class="btn btn-sm card-btn my-2 mx-2">3:05pm - 5:00pm</button>
                                 <button type="button" class="btn btn-sm  card-btn my-2 mx-2">5:05pm - 7:00pm</button>
                                 <button type="button" class="btn btn-sm card-btn my-2 mx-2">8:05pm - 10:00pm</button>
                             </div>
-
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Bootstrap & me">
+    <meta name="generator" content="Hugo 0.84.0">
+    <!--    change title on the tab -->
+    <title>MyBakery</title>
+    <!--      for github linkedin etc icons -->
+    <script src="https://kit.fontawesome.com/188a1ecbd0.js" crossorigin="anonymous" async></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Joti+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter+One">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+<!--  nav bar  -->
+<nav class="navbar sticky-top navbar-light bg-white">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/brand/brand_jz.png" width="80vw" height="100%" alt="" title="">
+        </a>
+        <div class="justify-content-end">
+            <a class="navbar-brand text-secondary" href="index.html">Work</a>
+            <a class="navbar-brand text-secondary" href="play.html">Play</a>
+            <a class="navbar-brand text-secondary" href="about.html">About</a>
+            <a class="navbar-brand text-secondary" href="assets/brand/anna_res.pdf" target="_blank">Resume</a>
+        </div>
+    </div>
+</nav>
+<!--    end nav bar  -->
+<body>
+<!--<img class="d-none d-md-block project-headimg" src="assets/brand/picka_cover.png">-->
+
+<main class="container mt-5 pt-5">
+    <article class="blog-post col-xl-10">
+        <h2 class="blog-post-title ">My Bakery</h2>
+        <p class="blog-post-meta">Nov, 2022</p>
+        <h4 class="pt-5" id="overview">Overview</h4>
+        <hr>
+        <p>
+            Developed a bakery app in React with AntDesign. Users can sort items by popularity, calories, and prices.
+            Users can also add/remove items to see the total calories through checking/uncheck the checkbox on each card.
+            For users who have special request, the app can only display items that are gluten-free, dairy-free or both.
+        </p>
+        <h4 class="pt-5" id="structure">App Structure</h4>
+        <hr>
+        <img src="assets/mybakery/structure.png">
+
+        <h4 class="pt-5" id="state">UseState</h4>
+        <hr>
+        <img src="assets/mybakery/usestate.png">
+
+        <h4 class="pt-5" id="impact">Impact</h4>
+        <hr>
+        <p>
+            The app is a good practice project for my React and Javascript skill.
+            By implementing the two components, three useState hooks, and Antdesign card components, I have a better understanding of DOM cycle.
+            <a href="https://kimonazj.github.io/bakery_dev/">Visit the bakery web here!</a> or <a href="https://github.com/kimonazj/bakery_dev">View the source code.</a>
+        </p>
+        <br>
+        <a class="mt-5 btn btn-back" href="index.html">← All Projects</a>
+    </article>
+
+    </div>
+
+    <div class="d-none d-xl-block position-fixed" style="top: 25%; right:0rem">
+        <div class="p-4 mb-3 bg-white rounded border">
+            <h4 class="fst-italic comicsans">Design Process</h4>
+            <div class="mb-0 comicsans">
+                <ol>
+                    <a href="#overview"><li>Overview</li></a>
+                    <a href="#stucture"><li>App Structure</li></a>
+                    <a href="#state"><li>UseState</li></a>
+                    <a href="#impact"><li>Impact</li></a>
+                </ol>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- footer start -->
+<footer class="blog-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="pb-3 pb-md-0 text-start">
+                    <p class="comicsans ">
+                        Hi, I'm <span class="jotione">Ji (Anna) Zhang</span>, a UIUX designer + frontend engineer.
+                        I'm passionate about creating beautiful and practical digital experiences.
+                    </p>
+                    <a class="text-decoration-none pt-5"> View my resume → </a>
+                </div>
+            </div>
+            <hr class="d-block d-md-none ">
+            <div class="col-md-4 pb-3 pb-md-0">
+                <div class="text-center">
+                    <h6>Stay Connected</h6>
+                    <a class="text-decoration-none" href="mailto:ji_zhang@brown.edu?subject=Hey Anna I Want to Connect With You!">Email me!</a>
+                    <br>
+                    <a class="text-decoration-none" href="https://www.linkedin.com/in/anna-ji-zhang/" target="_blank">My LinkedIn</a>
+                    <br>
+                    <a class="text-decoration-none" href="https://github.com/kimonazj" target="_blank">Github</a>
+                </div>
+            </div>
+            <hr class="d-block d-md-none ">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <h6>Featured Projects</h6>
+                    <a class="text-decoration-none" href="redesign.html">Yakima Theater</a>
+                    <br>
+                    <a class="text-decoration-none" href="elephantedu.html">Elephant Edu</a>
+                    <br>
+                    <a class="text-decoration-none" href="toko.html">Toko</a>
+                    <br>
+                    <a class="text-decoration-none" href="pickacourse.html">PickaCourse</a>
+                </div>
+            </div>
+        </div>
+        <p class="mt-5 pt-2 comicsans text-start">Ⓒ Made with 💙 by Ji Zhang</p>
+    </div>
+</footer>
+<!--  footer ends -->
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>

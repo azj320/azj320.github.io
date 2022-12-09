@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Bootstrap and me">
+    <meta name="generator" content="Hugo 0.84.ya0">
+    <title>Toko App</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Joti+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter+One">
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+<!--  nav bar  -->
+<nav class="navbar sticky-top navbar-light bg-white">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/brand/brand_jz.png" width="80vw" height="100%" alt="" title="">
+        </a>
+        <div class="justify-content-end">
+            <a class="navbar-brand text-secondary" href="index.html">Work</a>
+            <a class="navbar-brand text-secondary" href="play.html">Play</a>
+            <a class="navbar-brand text-secondary" href="about.html">About</a>
+            <a class="navbar-brand text-secondary" href="assets/brand/anna_res.pdf" target="_blank">Resume</a>
+        </div>
+    </div>
+</nav>
+<!--    end nav bar  -->
+<body>
+<img class="d-none d-md-block project-headimg" src="assets/iterative/toko_headimg.png">
+
+<!--Main Body-->
+<main class="container mt-5 pt-5">
+            <article class="blog-post col-xl-10">
+                <h2 class="blog-post-title">Toko App Design</h2>
+                <p class="blog-post-meta">Nov 8, 2022</p>
+                <h4 class="pt-5" id="overview">Overview</h4>
+                <hr>
+                <div class="row row-cols-md-2 pb-3">
+                    <img src="assets/iterative/mockup.png" >
+                    <p>In a group of four, we designed an interactive interface for an emerging startup.
+                        We went through a full process from creating sketches and mock-ups to user testing
+                        with a revised hi-fi prototype.</p>
+                </div>
+
+                <h4 class="pt-5" id="designthinking">Pre-Design Thinking</h4>
+                <hr>
+                <p>The startup company that we chose is Toko. Toko is a mobile app that helps users learn
+                    English and gain fluency by having realistic conversations with an AI bot. The conversations
+                    are suggestions by choosing through a list of different topics, and the AI bot gives instant
+                    grammatical corrections and feedback. The startup’s target audience is mainly learners in East Asia.
+                    The users who our interface would impact would be non-native English speakers. Due to the
+                    fact that the app is a language learning app, it has a very specific target user audience.
+                </p>
+
+                <h4 class="pt-5" id="sketch">Sketches</h4>
+                <hr>
+                <p>We each did some sketches for some important screens.</p>
+                <img class="pb-4" src="assets/iterative/sketches.png" width="100%">
+
+
+                <h3 class="pt-5" id="lofi">Low-Fidelity Wireframe With Annotations</h3>
+                <hr>
+                <p>The design decisions are in the annotation. <a target="_blank" href="https://www.figma.com/file/pvSaC5YstmYMQkLkj8fzi1/toko?node-id=54%3A4">Link to view it in Figma</a></p>
+                <img class="pb-4" src="assets/iterative/lofi.png" width="80%">
+
+
+                <h4 class="pt-5" id="hifi">Mockup Critics & Final High-Fidelity Wireframe</h4>
+                <hr>
+                <h5 class="">Critics Summary</h5>
+                <ul>
+                    <li>Text across the app was too small. Specifically, “view all” buttons,
+                        “browse all”, topic names, and sign up instructions, which we made bigger. </li>
+                    <li>The login screen flows were confusing. We streamlined this into one
+                        sign up page and one login page.</li>
+                    <li>We had inconsistent use of bookmark icons for saved topics.
+                        We added bookmark icons to every topic to allow users to save topics.</li>
+                    <li>We had inconsistent titles for the “Continue Practicing” sections on the home and
+                        notebook pages. We made these sections’ titles the same to make it clear these
+                        were the same section.</li>
+                    <li>We used red text for mistake corrections, which was seen as too aggressive.
+                        We changed this to blue.</li>
+                    <li>Our prototype did not show that corrections were made in real time on the
+                        chat screen. We added grammatical corrections and a pop-up explanation.</li>
+                    <li>To better use the touch interface, we added a swipe up functionality to
+                        continue the conversation on the transcript screen.</li>
+                    <li>The profile page had no way to edit account details, so we added edit buttons.</li>
+                </ul>
+                <h5 class="py-3">Final High-Fidelity Prototype</h5>
+                <img src="assets/iterative/hifi.png" width="100%">
+                <a class="pb-3" href="https://www.figma.com/proto/pvSaC5YstmYMQkLkj8fzi1/toko?node-id=212%3A770&scaling=scale-down&page-id=212%3A475&starting-point-node-id=212%3A770&show-proto-sidebar=1">Link to play with the prototype in Figma</a>
+
+                <h3 class="pt-5" id="usertest">User Testing</h3>
+                <hr>
+                <h5>Scenario</h5>
+                <p>This is a prototype of a language app that teaches non-native English speakers
+                    English by having realistic chats with an AI bot about different topics.</p>
+                <p>Imagine you are trying to learn English in this app. Navigate through the
+                    app and learn about different topics and interact with the app by completing the given tasks!</p>
+                <p>NOTE: This is not an actual website but an interactive mockup made on prototyping
+                    software; so you can click through but not actually type into the chat boxes or
+                    other complex features; also not all prototype components are completed (so only
+                    specific topics are 'clickable'). This is a mobile app so imagine that your cursor
+                    is your finger (click = tap, click and drag = swipe up or down, scroll = scroll).</p>
+                <h5>Tasks</h5>
+                <ol>
+                    <li>Imagine you are trying to learn English in this app. Navigate through the app
+                        and try to chat about the topic “Social Gathering” (note: this is a prototype
+                        so you can’t actually interact with the AI bot or type into the chat box just
+                        navigate to the chat screen)</li>
+                    <li>After Task 1, imagine that you’ve previously already learned about the topic:
+                        “Snack Time.” Try to go back to that previously learned topic and continue
+                        the conversation about “Snack Time.” Then in your current conversation in
+                        “Snack Time,” try to learn the details of the grammatical mistake that
+                        you made in the chat.</li>
+                    <li>After Task 2, look back through your conversation so far; see if you
+                        can go back to the transcript.</li>
+                    <li>Go back to the home screen and navigate to view all the possible topics</li>
+                    <li>Navigate through the app and try to sign out or log out.</li>
+                </ol>
+                <h5>Post Test Questionnaire</h5>
+                <ol>
+                    <li>Was there anything confusing when using the app? Why or why not?</li>
+                    <li>Is there anything that you would like to improve about the app?</li>
+                    <li>What did you like the most about using this app? What did you like the least?</li>
+                    <li>On a scale from 1-5 from least likely to most likely, how likely would you
+                        recommend this app to a friend?</li>
+                </ol>
+                <h5>User Testing Videos</h5>
+                <p>Click on the picture to watch our user testing videos</p>
+                <div class="row row-cols-3 pb-3">
+                    <div class="col">
+                        <a href="https://app.usertesting.com/v/cf6ee37b-a8a1-4c55-89e5-0d8d76b22e2b?encrypted_video_handle=ad2aea3e-85a4-4906-b919-20d68bc86daf#!/notes" target="_blank"><img src="assets/iterative/usertest.png" width="100%"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://app.usertesting.com/v/b88daf0d-627b-4727-b619-a8041b8b2ccb?encrypted_video_handle=86259cff-c0a4-49c5-ab44-90db76969b03#!/notes" target="_blank"><img src="assets/iterative/usertest1.png" width="100%"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://app.usertesting.com/v/d4c41938-8f3b-41ea-9d0a-70148dc02d8e?encrypted_video_handle=ccc7efb2-86c9-402b-86fc-bc28fbc32194#!/notes" target="_blank"><img src="assets/iterative/usertest2.png" width="100%"></a>
+                    </div>
+                </div>
+                <h4 class="pt-5" id="result">Result Analysis</h4>
+                <hr>
+                <h5 class="pb-2">Result Summary For Each Task</h5>
+                <h6>Task 1: Chat with the bot under the "Social Gathering" setting</h6>
+                <ul>
+                    <li>All three users were able to successfully find the “Social Gathering”
+                        topic and enter into the chat.
+                    <li>One user suggested making the topic titles easier to be spotted either
+                        by making it a darker color or bolding it since the text was not super
+                        obvious. The other two users said that it was easy to find.</li>
+                </ul>
+
+                <h6>Task 2: Continue the chat under the "Snack Time" setting</h6>
+                <ul>
+                    <li>All three users struggled with figuring out how to continue the conversation.</li>
+                    <li>The drag up functionality was not intuitive, and they all attempted to click the
+                        section and saw no response and did not try dragging. Only one user was able to
+                        figure it out and found the grammar correction pop up immediately.</li>
+                    <li>Possibly the drap up interaction on a phone would be more intuitive than simulating
+                        phone interactions on a computer. Regardless, this would be more intuitive with a button.</li>
+                </ul>
+
+                <h6>Task 3: Go back to transcript and view history under the "Snack Time" setting</h6>
+                <ul>
+                    <li>Since some users were unable to navigate to the continued conversation page, they
+                        did not understand where the transcript was. </li>
+                    <li>One user that did find the page, thought that the arrow signs were confusing
+                        in that they were not exactly pointing to the transcript, leading her to misidentify
+                        which page was the transcript.</li>
+                </ul>
+
+                <h6>Task 4: Go back to home screen and navigate all possible topics</h6>
+                <ul>
+                    <li>All three users were able to navigate back to the home screen by finding
+                        it on the bottom navigation menu bar. Some users noted that the “Browse All”
+                        button was obvious and easy to find. All users found this task to be very easy.</li>
+                    <li>A user noted that they liked the blue color scheme for all the topics and
+                        seemed very calming. </li>
+                </ul>
+
+                <h6>Task 5: Sign Out</h6>
+                <ul>
+                    <li>All the users were able to find the sign out button and found the task extremely easy. </li>
+                    <li>The sign out button being under the profile page was expected and intuitive to all the users.</li>
+                </ul>
+
+                <h5 class="pt-3">Potential Interface Changes</h5>
+                <p>Based on the user testing result, we found some interface problems with our current prototype.</p>
+                <ul>
+                    <li>One of the main comments that we received from user testing was that for Task 2, it was not
+                        very intuitive on how to continue a previously done conversation. We would potentially change
+                        our interface from swipe up to continue to a solid button so that the directionality of the
+                        arrow symbol does not confuse the user on which screen is supposed to be the "Transcript screen"
+                        and which screen is supposed to be the "Continue conversation screen". </li>
+                    <li>The other main issue was that users found it confusing that during a continued conversation,
+                        they could see the transcript while learning and as a static page. Users were not sure why
+                        there were two screens for the transcript. We would potentially change our interface to only
+                        show the static transcript page when viewing a previous conversation, and then if a user
+                        wanted to continue the conversation we would not have the option to open up the static transcript
+                        from the messaging page.</li>
+                </ul>
+                <h4 class="pt-5" id="impact">Impact</h4>
+                <hr>
+                <p>After finishing our design, we contact the founders of Toko and present them our work.
+                    The founder appreciated our work. They are going to implement the "short exercise" feature in our design soon!
+                </p>
+                <a class="mt-5 btn btn-back" href="index.html">← All Projects</a>
+         </article>
+        </div>
+    <div class="d-none d-xl-block position-fixed" style="top: 25%; right:0rem">
+        <div class="p-4 mb-3 bg-white rounded border">
+            <h5 class="fst-italic comicsans">Design Process</h5>
+            <div class="mb-0 comicsans">
+                <ol>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#designthinking">Pre-Design Thinking</a></li>
+                    <li><a href="#sketch">Sketches</a></li>
+                    <li><a href="#lofi">Lo-fi Wireframe</a></li>
+                    <li><a href="#hifi">Critics & Hi-fi</a></li>
+                    <li><a href="#usertest">User Testing</a></li>
+                    <li><a href="#result">Result Analysis</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- footer start -->
+<footer class="blog-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="pb-3 pb-md-0 text-start">
+                    <p class="comicsans ">
+                        Hi, I'm <span class="jotione">Ji (Anna) Zhang</span>, a UIUX designer + frontend engineer.
+                        I'm passionate about creating beautiful and practical digital experiences.
+                    </p>
+                    <a class="text-decoration-none pt-5"> View my resume → </a>
+                </div>
+            </div>
+            <hr class="d-block d-md-none ">
+            <div class="col-md-4 pb-3 pb-md-0">
+                <div class="text-center">
+                    <h6>Stay Connected</h6>
+                    <a class="text-decoration-none" href="mailto:ji_zhang@brown.edu?subject=Hey Anna I Want to Connect With You!">Email me!</a>
+                    <br>
+                    <a class="text-decoration-none" href="https://www.linkedin.com/in/anna-ji-zhang/" target="_blank">My LinkedIn</a>
+                    <br>
+                    <a class="text-decoration-none" href="https://github.com/kimonazj" target="_blank">Github</a>
+                </div>
+            </div>
+            <hr class="d-block d-md-none ">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <h6>Featured Projects</h6>
+                    <a class="text-decoration-none" href="redesign.html">Yakima Theater</a>
+                    <br>
+                    <a class="text-decoration-none" href="elephantedu.html">Elephant Edu</a>
+                    <br>
+                    <a class="text-decoration-none" href="toko.html">Toko</a>
+                    <br>
+                    <a class="text-decoration-none" href="pickacourse.html">PickaCourse</a>
+                </div>
+            </div>
+        </div>
+        <p class="mt-5 pt-2 comicsans text-start">Ⓒ Made with 💙 by Ji Zhang</p>
+    </div>
+</footer>
+<!--  footer ends -->
+
+</body>
+</html>
