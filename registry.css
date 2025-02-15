@@ -1,0 +1,9 @@
+.card{
+    min-width: 18rem;
+    max-width: 20rem;
+}
+
+.ordered-overlay {
+    pointer-events: none;
+    opacity: 0.5;
+  }

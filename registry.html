@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Registry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet">
+    <link href="registry.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- for lean cloud database -->
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.13.2/dist/av-min.js"></script>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+<script type="text/javascript" src="registry.js"></script>
+    <style>
+
+        .container {
+            max-width: 90%;
+        }
+
+        @media (max-width: 768px) {
+            .display-4 {
+                font-size: 2rem;
+            }
+
+            .lead {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-white px-3 mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="eng.html">
+            <img src="img/icon.png" alt="Bootstrap" width="30" height="24">
+            Wedding
+          </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header-text text-center pb-5">
+            <h1 class="pb-3">Wedding Registry</h1>
+            <div class="text-body row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <p>
+                        We are so grateful to have you in our lives and can't wait to celebrate this special 
+                        day with you! Your love and support mean the world to us, and having you by our side 
+                        is the greatest gift of all. </p>
+                       <p>For those who wish to contribute, we have put together a 
+                        registry with a few things to help us start our new journey together. We also appreciate 
+                        gifts in the form of cash, which will go toward our future adventures as a married couple. </p>
+
+                        <p>More than anything, we’re just excited to celebrate with you—thank you for being 
+                        part of our love story!
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+        <div >
+            <div class="row justify-content-center " id="registry_list">
+                <template>
+                    <div class="col pb-3 pb-lg-0 d-flex justify-content-center" v-for="item in sortedTableList" :key="item.item_id">
+                        <div class="card " :class="{ 'ordered-overlay': item.ordered }">
+                            <img :src="item.image_link" class="card-img-top" :alt="item.item_name">
+                            <div class="card-body">
+                              <h5 class="card-title">{{ item.item_name }}</h5>
+                              <p class="card-text">$ {{item.item_price}}</p>
+                              <a :href="item.item_link" target="_blank" class="btn btn-primary btn-sm">Go website</a>
+                              <a class="btn btn-outline-secondary btn-sm" @click="orderItem(item)">
+                                    I want to order this!
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </template>
+
+                <!-- <div class="col">
+                    <div class="card pb-3 pb-lg-0 d-flex justify-content-center">
+                        <img src="https://assets.wsimgs.com/wsimgs/rk/images/dp/wcm/202506/0016/img98m.jpg" class="card-img-top" alt="plate set image">
+                        <div class="card-body">
+                          <h5 class="card-title">Sicily Ceramic Mixed Salad Plates, Set of 4</h5>
+                          <p class="card-text">$69.95</p>
+                          <a href="#" class="btn btn-primary btn-sm">Go website</a>
+                          <a class="btn btn-outline-secondary btn-sm">
+                                I want to order this!
+                          </a>
+                        </div>
+                      </div>
+                </div> -->
+                
+            </div>
+        </div>
+
+    </div>
+   
+   
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="eng.html" class="nav-link px-2 text-body-secondary">Wedding</a></li>
+            <li class="nav-item"><a href="rcs/all_invitation.pdf" class="nav-link px-2 text-body-secondary" target="_blank">Invitation Card</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">&copy; 2025 Made with 💙 by Anna Zhang</p>
+        </footer>
+      </div>
+</body>
+
+</html>
