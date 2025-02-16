@@ -1,7 +1,7 @@
 const { Query, User } = AV;
 AV.init({
     appId: "RRovdt4PXCCqoYyAUhG6G1Ej-MdYXbMMI",
-    appKey: "lUnFICdCPPxjY62JPaWurJXpu",
+    appKey: "UnFICdCPPxjY62JPaWurJXpu",
     serverURL: "https://rrovdt4p.api.lncldglobal.com"
 });
 
@@ -26,7 +26,7 @@ new Vue({
             const queryAll = new AV.Query('Data');
             queryAll.find().then((rows) => {
                 for (let row of rows) {
-                  this.tableList.push(row.attributes);
+                  this.table_list.push(row.attributes);
             }})
         },
         orderItem(item) {
