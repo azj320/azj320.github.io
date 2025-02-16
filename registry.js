@@ -9,7 +9,9 @@ new Vue({
     el: '#registry_list',
     data(){
         return{
-            table_list: []
+            table_list: [],
+            addressBook: "23 Hampshire Dr,\nAPT J,\nNashua, NH 03063",
+            isAddressVisible: false
         };
     },
     computed: {
@@ -21,6 +23,12 @@ new Vue({
         this.getList();
     },
     methods:{
+      showAddress(){
+        this.isAddressVisible = true;
+        navigator.clipboard.writeText(this.addressBook)
+          .then(() => alert("Address copied to clipboard: \n" + this.addressBook))
+          .catch(err => console.error("Error copying address: ", err));
+      },
         getList(){
             this.table_list = []
             const queryAll = new AV.Query('Data');
@@ -30,6 +38,8 @@ new Vue({
             }})
         },
         orderItem(item) {
+          if(item.item_id !== 5){
+            if (confirm(`Are you sure you want to order: ${item.item_name}?`)) {
             const query = new AV.Query('Data');
             query.equalTo("item_id", item.item_id);
             query.first().then((row) => {
@@ -45,7 +55,14 @@ new Vue({
             }).catch((error) => {
               console.error("Error finding item", error);
             });
+          }else {
+            alert("Order canceled.");
           }
+        }else{
+          alert("This item is just a display. Contact the couple for more information")
+        }
+      }
+          
     }
 
 })

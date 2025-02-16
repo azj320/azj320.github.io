@@ -1,6 +1,16 @@
 .card{
     min-width: 18rem;
     max-width: 20rem;
+    
+}
+.card img{
+    height: 18rem;
+}
+.card-title{
+    height: 3rem;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
 }
 
 .ordered-overlay {

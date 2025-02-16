@@ -20,7 +20,7 @@
 <!-- import Vue before Element -->
 <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
 <!-- for lean cloud database -->
-<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src="https://code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
 
     <style>
 
@@ -45,11 +45,11 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="eng.html">
             <img src="img/icon.png" alt="Bootstrap" width="30" height="24">
-            Wedding
+            Back to Wedding
           </a>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" id="registry_list">
         <div class="header-text text-center pb-5">
             <h1 class="pb-3">Wedding Registry</h1>
             <div class="text-body row justify-content-center">
@@ -66,37 +66,50 @@
                         part of our love story!
                     </p>
                 </div>
+                <div >
+                    <button type="button" class="btn btn-dark" @click="showAddress">Our Address</button>
+                    <p v-show="isAddressVisible">Delivery Address: {{ addressBook }}</p>
+                </div>
             </div>
         
         </div>
         <div >
-            <div class="row justify-content-center " id="registry_list">
+            <div class="row  ">
                 <template>
-                    <div class="col pb-3 pb-lg-0 d-flex justify-content-center" v-for="item in sortedTableList" :key="item.item_id">
-                        <div class="card " :class="{ 'ordered-overlay': item.ordered }">
+                    <div class="col py-3 pb-lg-0 d-flex justify-content-center" v-for="item in sortedTableList" :key="item.item_id">
+                        <div class="card " :class="{'ordered-overlay': item.checked}">
                             <img :src="item.image_link" class="card-img-top" :alt="item.item_name">
                             <div class="card-body">
-                              <h5 class="card-title">{{ item.item_name }}</h5>
-                              <p class="card-text">$ {{item.item_price}}</p>
-                              <a :href="item.item_link" target="_blank" class="btn btn-primary btn-sm">Go website</a>
-                              <a class="btn btn-outline-secondary btn-sm" @click="orderItem(item)">
-                                    I want to order this!
-                              </a>
+                                <div>
+                                    <h5 class="card-title">{{ item.item_name }}</h5>
+                                    <p class="card-text pt-2 pb-3">$ {{item.item_price}} <span class="badge badge-pill bg-secondary" v-show=item.most_wanted>Most Wanted</span></p>
+                                </div>
+                                <div class="pt-2" v-if="item.checked === false">
+                                    <a :href="item.item_link" target="_blank" class="btn btn-dark btn-sm">Go website</a>
+                                    <a class="btn btn-outline-secondary btn-sm" @click="orderItem(item)">I ordered this!</a>
+                                </div>
+                                <div class="pt-2" v-else>
+                                    <h6>Ordered!</h6>
+                                </div>
+                                    
                             </div>
                           </div>
                     </div>
                 </template>
 
                 <!-- <div class="col">
-                    <div class="card pb-3 pb-lg-0 d-flex justify-content-center">
+                    <div class="card pb-3 pb-lg-0 d-flex justify-content-center ordered-overlay">
                         <img src="https://assets.wsimgs.com/wsimgs/rk/images/dp/wcm/202506/0016/img98m.jpg" class="card-img-top" alt="plate set image">
                         <div class="card-body">
-                          <h5 class="card-title">Sicily Ceramic Mixed Salad Plates, Set of 4</h5>
-                          <p class="card-text">$69.95</p>
-                          <a href="#" class="btn btn-primary btn-sm">Go website</a>
-                          <a class="btn btn-outline-secondary btn-sm">
-                                I want to order this!
-                          </a>
+                            <div>
+                                <h5 class="card-title">Sicily Ceramic Mixed </h5>
+                                <p class="card-text pt-2 pb-3">$69.95 <span class="badge badge-pill bg-primary">Most Wanted!</span></p>
+                            </div>
+                            <div class="pt-2">
+                                <h6>Ordered</h6>
+                            </div>
+                          
+                          
                         </div>
                       </div>
                 </div> -->
